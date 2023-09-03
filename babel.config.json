@@ -1,4 +1,9 @@
 {
 	"presets": ["@babel/preset-typescript"],
-	"plugins": ["babel-plugin-event-on-class-extend"]
+	"plugins": [
+		[
+			"babel-plugin-event-on-class-extend",
+			{ "staticCallbackName": "onExtendCustom" }
+		]
+	]
 }

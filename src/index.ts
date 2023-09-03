@@ -2,7 +2,7 @@ class X {
 	static name = '"I\'m X"'
 
 	// I don't know the type for class but not the instance
-	static onExtend(targetClass: any) {
+	static onExtendCustom(targetClass: any) {
 		console.log(`Class X is extended by ${targetClass.name}`)
 	}
 }
