@@ -1,6 +1,7 @@
 class X {
 	static onExtend(targetClass: X) {
-		console.log(`Class X is extended by ${targetClass.toString()}`)
+		// Typescript hack I don't know why its not defined
+		console.log(`Class X is extended by ${(targetClass as any).name}`)
 	}
 }
 
