@@ -1,12 +1,13 @@
 class X {
-	static onExtend(targetClass: X) {
+	static name = '"I\'m X"'
+
+	// I don't know the type for class but not the instance
+	static onExtend(targetClass: any) {
 		// Typescript hack I don't know why its not defined
-		console.log(`Class X is extended by ${(targetClass as any).name}`)
+		console.log(`Class X is extended by ${targetClass.name}`)
 	}
 }
 
 class Y extends X {
-	toString() {
-		return 'Y'
-	}
+	static name = '"I\'m Y"'
 }
