@@ -1,0 +1,25 @@
+{
+	"name": "test-babel-plugin-event-on-class-extend",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "babel src --out-dir dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kennarddh/test-babel-plugin-event-on-class-extend.git"
+	},
+	"author": "kennarddh",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/kennarddh/test-babel-plugin-event-on-class-extend/issues"
+	},
+	"homepage": "https://github.com/kennarddh/test-babel-plugin-event-on-class-extend#readme",
+	"devDependencies": {
+		"@babel/cli": "^7.22.10",
+		"@babel/core": "^7.22.11",
+		"@babel/preset-env": "^7.22.14",
+		"@babel/preset-typescript": "^7.22.11",
+		"babel-plugin-event-on-class-extend": "^0.0.1"
+	}
+}
