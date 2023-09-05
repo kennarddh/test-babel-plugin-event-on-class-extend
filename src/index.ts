@@ -1,9 +1,12 @@
 class X {
 	static name = '"I\'m X"'
 
-	// I don't know the type for class but not the instance
-	static onExtendCustom(targetClass: any) {
+	public instanceMethod() {}
+
+	// new (...args: any[]) => X Prevent calling instance method
+	static onExtendCustom(targetClass: new (...args: any[]) => X) {
 		console.log(`Class X is extended by ${targetClass.name}`)
+		// targetClass.instanceMethod() This will throw error
 	}
 }
 
